@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.login-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button.toggle {
+  background: none;
+  color: #28a745;
+  text-decoration: underline;
+}
+
+
+.container{
+   /* background: linear-gradient(to bottom, #069687, #70B2B2); */
+   background-image: url("/chatbg.jpg");
+   background-size: cover;
+   background-position: center;
+    height: 100vh;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.icon i{
+    font-size: 40px;
+}
+
+
+/* chatbox styling */
+.screenbox{
+    max-width: 955px;
+    margin:auto;
+    height: 77vh;
+      border: 2px solid white;
+    border-radius: 10px;
+    /* padding: 33px; */
+    overflow-y: auto;
+    margin-bottom: 23px;
+}
+
+.chat{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(245, 244, 244);
+    width: 24%;
+    margin: 17px 12px;
+    padding:10px;
+
+}
+.right{
+    float: right;
+    clear: both;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+.right:hover{
+    background-color: #fff;
+    color: black;
+}
+.left{
+    float: left;
+    clear: both;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+.left:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/* send box styling */
+#send-container{
+   display: block;
+   margin: auto;
+   text-align: center;
+   max-width: 1075px;
+   width: 100%; 
+}
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    font-size: 18px;
+   padding-left: 5px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* height: 34px; */
+    padding: 5px;
+}
+.btn i{
+    font-size: 25px;
+}
